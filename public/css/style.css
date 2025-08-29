@@ -31,10 +31,9 @@ body {
     background-color: var(--black);
     color: var(--white);
     font-family: 'Web IBM VGA 9x16', monospace;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 #wrapper {
     width: 80ch;
-    border:1px solid red;
 }
