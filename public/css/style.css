@@ -1,0 +1,27 @@
+:root {
+  /* colors */
+  --black: #000000;
+  --blue: #0000AA;
+  --green: #00AA00;
+  --cyan: #00AAAA;
+  --red: #AA0000;
+  --magenta: #AA00AA;
+  --yellow: #AA5500;
+  --white: #AAAAAA;
+  --bright-black: #555555;
+  --bright-blue: #5555FF;
+  --bright-green: #55FF55;
+  --bright-cyan: #55FFFF;
+  --bright-red: #FF5555;
+  --bright-magenta: #FF55FF;
+  --bright-yellow: #FFFF55;
+  --bright-white: #FFFFFF;
+}
+
+
+
+/* styles */
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
