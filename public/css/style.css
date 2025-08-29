@@ -18,10 +18,17 @@
   --bright-white: #FFFFFF;
 }
 
-
+/* font */
+@font-face {
+    font-family: 'Web IBM VGA 9x16';
+    font-style: normal;
+    font-weight: 400;
+    src: url(web_ibm_vga_9x16.woff) format('woff');
+}
 
 /* styles */
 body {
     background-color: var(--black);
     color: var(--white);
+    font-family: 'Web IBM VGA 9x16', monospace;
 }
