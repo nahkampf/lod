@@ -4,14 +4,16 @@ namespace LOD;
 
 use LOD\DB;
 
-class App
+final class App
 {
     public DB $db;
     public readonly string $title;
     public readonly string $titleShort;
     public readonly string $version;
 
-    public function __construct()
+    private static $instances = [];
+
+    protected function __construct()
     {
         $this->db = new DB(
             $_ENV['DB_HOST'],
@@ -23,6 +25,24 @@ class App
 
         $this->title = $_ENV['GAME_TITLE'];
         $this->titleShort = $_ENV['GAME_TITLE_SHORT'];
-        $this->version = $_ENV['GAME_VERSIOn'];
+        $this->version = $_ENV['GAME_VERSION'];
+    }
+
+    protected function __clone()
+    {
+    }
+
+    public function __wakeup()
+    {
+        throw new \Exception("Cannot unserialize a singleton.");
+    }
+
+    public static function getInstance(): App
+    {
+        $cls = static::class;
+        if (!isset(self::$instances[$cls])) {
+            self::$instances[$cls] = new static();
+        }
+        return self::$instances[$cls];
     }
 }
