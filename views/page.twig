@@ -4,7 +4,7 @@
 {{ content }}
 {% endif %}
 {% if view %}
-{{ include({{view}}.twig) }}
+{{ include((view) ~ '.twig') }}
 {% endif %}
 </div>
 {{ include('_footer.twig') }}
