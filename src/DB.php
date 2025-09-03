@@ -2,9 +2,8 @@
 
 namespace LOD;
 
-use mysqli,
-
-\mysqli_result;
+use mysqli;
+use mysqli_result;
 use Throwable;
 
 class DB
