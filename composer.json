@@ -22,8 +22,8 @@
             "./vendor/bin/phpcbf --standard=PSR12 src"
         ],
         "test": [
-            "@phpstan",
-            "@phpcs"
+            "@phpcs",
+            "@phpstan"
         ],
         "fix": [
             "@phpcbf"
