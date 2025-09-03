@@ -1,12 +1,15 @@
 <?php
+
 namespace LOD;
 
-use \mysqli, \mysqli_result;
+use mysqli,
+
+\mysqli_result;
 use Throwable;
 
 class DB
 {
-    private mysqli|false $connection;
+    private mysqli $connection;
 
     /**
      * Set up the DB
@@ -24,11 +27,12 @@ class DB
         string $password,
         string $database,
         int $port = 3306
-    )
-    {
-        if(!$this->connection = mysqli_connect($host, $username, $password, $database, $port)) {
-            throw new Throwable('No database connection.');
-        };
+    ) {
+        if (!$conn = mysqli_connect($host, $username, $password, $database, $port)) {
+            throw new \Exception('No database connection.');
+        } else {
+            $this->connection = $conn;
+        }
     }
 
     public function query(string $query): mysqli_result|bool
@@ -36,9 +40,9 @@ class DB
         return $this->connection->query($query);
     }
 
-    public function fetchAll(mysqli_result $result): array
+    public function fetchAll(mysqli_result $result): array|false|null
     {
-        return $result->fetch_assoc($result);
+        return $result->fetch_assoc();
     }
 
     public function numRows(mysqli_result $result): int|string
