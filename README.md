@@ -64,6 +64,8 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
   - Owns X forts
   - Take more than X damage in a combat without dying or running away/teleporting out
   - Bookworm: Has read every single skillbook
+  - Own a familiar
+  - Plus various quests completed
 - ROMS:
   - Diet - reduces food consumption by 10%
   - Notes - Take notes
