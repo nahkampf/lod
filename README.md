@@ -18,6 +18,32 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
 - Faction reputation/standings. Plus or minus for certain actions. Unlocks/locks certain stuff (maybe locations become unavailable/available depending on standing, or certain functions inside a location turn on/off etc).
 - Armor slots? "Head", "Body", "Legs"?
 - Achievements!
+  - Explore the entire map
+  - Kill x enemies
+  - Kill x enemies using grenades
+  - Kill X enemies bare handed
+  - Find buried stash
+  - Get your first vehicle
+  - Find the gyrocopter
+  - Break into the prison
+  - Enter the Nuclear Silo
+  - Reach level x
+  - Build a fort
+  - Defeat a fort
+  - Travel X tiles
+  - Teleport
+  - Find the crashed UFO
+  - Have a team of 5 players
+  - Have X cash
+  - Have X AGI/INT/DEX/END/STR
+  - Have ALL ROMS
+  - Find all the pieces of the Purifier
+  - Have highest standing with X/Y/Z
+  - Have negative standing with X
+  - Consumed X fuel
+  - Consumed X ammunition
+  - Consumed X medkits
+  - Defeat X players
 - ROMS:
   - Diet - reduces food consumption by 10%
   - Notes - Take notes
