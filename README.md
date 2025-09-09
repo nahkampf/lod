@@ -4,7 +4,7 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
 ## Ideas & todos
 - Secret locations: not shown as icons on map, but can be activated via quests, random encounter etc (e.g a quest flag set -> go to x,y -> initiate dialogue/location/event/combat etc)
 - Random encounters/events other than combat. Quest type stuff, randomly find items, randomly take damage/set various flags/get effects etc.
-- Vehicles: either land or air (terrain_types has fields impassable_foot, impassable_vehicle, impassable_air). Air vehicle could be a gyrocopter (woo mad max!), to bypass walls or high mountains for instance
+- Vehicles: either land or air (terrain_types has fields impassable_foot, impassable_vehicle, impassable_air). Air vehicle could be a gyrocopter (woo mad max!), to bypass walls or high mountains for instance. Also make sure we only encounter air-type enemies if flying.
   - Fuel: fuel sources, conversions, fuel consumption etc. Vehicle marker on map for vehicles that you've left or that has run out of fuel (also possibility to bring batteries/jerrycans to them to refuel).
   - Simple repair/damage system? Maybe you can find vehicles at locations or random encounters that needs repair or spare parts before you can use them
 - Stamina/thirst/hunger system. Able to drink water from map water features (with risk for poisoning?).
