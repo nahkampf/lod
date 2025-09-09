@@ -17,6 +17,15 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
 - Dialogue system. Hyoerlinked words. Check flags and/or AIDES skill rolls for various things.
 - Faction reputation/standings. Plus or minus for certain actions. Unlocks/locks certain stuff (maybe locations become unavailable/available depending on standing, or certain functions inside a location turn on/off etc).
 - Armor slots? "Head", "Body", "Legs"?
+- Vehicles:
+  - BMX Bike
+  - Motorcycle
+  - Motorcycle w/ sidecar
+  - Dune buggy
+  - Car
+  - Gyrocopter
+  - Inflatable raft
+- How does having a land-vehicle affect traveling overland? Less stamina loss (terrain_types have `drag` which cause stamina loss). We're not really able to simulate "speed" as every "turn" is one movement anyways.
 - Achievements!
   - Explore the entire map
   - Kill x enemies
@@ -44,6 +53,9 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
   - Consumed X ammunition
   - Consumed X medkits
   - Defeat X players
+  - Have entered every single type of terrain_type
+  - Died 25 times
+  - Dealt X damage in a single combat phase
 - ROMS:
   - Diet - reduces food consumption by 10%
   - Notes - Take notes
