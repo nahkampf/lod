@@ -57,6 +57,7 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
   - Died 25 times
   - Dealt X damage in a single combat phase
   - Have entered every single (visible) location
+  - Has killed every single type of (normal) enemy
 - ROMS:
   - Diet - reduces food consumption by 10%
   - Notes - Take notes
