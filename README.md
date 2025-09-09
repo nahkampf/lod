@@ -18,13 +18,14 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
 - Faction reputation/standings. Plus or minus for certain actions. Unlocks/locks certain stuff (maybe locations become unavailable/available depending on standing, or certain functions inside a location turn on/off etc).
 - Armor slots? "Head", "Body", "Legs"?
 - Vehicles:
-  - BMX Bike
-  - Motorcycle
-  - Motorcycle w/ sidecar
-  - Dune buggy
-  - Car
-  - Gyrocopter
-  - Inflatable raft
+  - BMX Bike - no inventory - no fuel
+  - Motorcycle - no inventory - consumes guzzoline
+  - Motorcycle w/ sidecar - slight inventory - consumes guzzoline
+  - Dune buggy - slight inventory - consumes guzzoline
+  - Car - big inventory - consumes guzzoline
+  - EV car - big inventory - consumes energy packs
+  - Gyrocopter - no inventory - consumes guzzoline
+  - Inflatable raft - no inventory - no fuel
 - How does having a land-vehicle affect traveling overland? Less stamina loss (terrain_types have `drag` which cause stamina loss). We're not really able to simulate "speed" as every "turn" is one movement anyways.
 - Achievements!
   - Explore the entire map
