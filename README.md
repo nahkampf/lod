@@ -31,7 +31,7 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
   - Kill x enemies
   - Kill x enemies using grenades
   - Kill X enemies bare handed
-  - Find buried stash
+  - Find X buried stashes
   - Get your first vehicle
   - Find the gyrocopter
   - Break into the prison
@@ -58,6 +58,12 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
   - Dealt X damage in a single combat phase
   - Have entered every single (visible) location
   - Has killed every single type of (normal) enemy
+  - Has run away X times
+  - Has produced X energy (in fortresses)
+  - Has taken X cash in tolls (fortresses)
+  - Owns X forts
+  - Take more than X damage in a combat without dying or running away/teleporting out
+  - Bookworm: Has read every single skillbook
 - ROMS:
   - Diet - reduces food consumption by 10%
   - Notes - Take notes
