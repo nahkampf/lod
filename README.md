@@ -1,6 +1,84 @@
 # lod
 Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land of Devastation
 
+## Ideas & todos
+- Secret locations: not shown as icons on map, but can be activated via quests, random encounter etc (e.g a quest flag set -> go to x,y -> initiate dialogue/location/event/combat etc)
+- Random encounters/events other than combat. Quest type stuff, randomly find items, randomly take damage/set various flags/get effects etc.
+- Vehicles: either land or air (terrain_types has fields impassable_foot, impassable_vehicle, impassable_air). Air vehicle could be a gyrocopter (woo mad max!), to bypass walls or high mountains for instance. Also make sure we only encounter air-type enemies if flying.
+  - Fuel: fuel sources, conversions, fuel consumption etc. Vehicle marker on map for vehicles that you've left or that has run out of fuel (also possibility to bring batteries/jerrycans to them to refuel).
+  - Simple repair/damage system? Maybe you can find vehicles at locations or random encounters that needs repair or spare parts before you can use them
+- Stamina/thirst/hunger system. Able to drink water from map water features (with risk for poisoning?).
+- Persistent/temporary effects: Irradiated, sick, poisoned etc)?
+- Engagement "steps" like in NeoScavenger. Most should follow the normal LOD routine of 1 turn of LR combat, then SR combat, but maybe skills, perks, terrain, vehicles, equipment etc could give the chance of having multiple LR rounds or disengaging from SR to LR again etc?
+- Familiars! Dog, parrot, rat, wolf(?), robot?
+- Hidden stash - if you have a shovel you can bury items in the ground. Shows a marker only for you on the map. Others can find it by searching (chance based - can be affected by SCANNERS).
+- A trade route/caravan system ("offmap") for forts? If fort X sets up a trade route somewhere it should leave every X timeperiod and return Y. While in this timeframe, calculate a fuzzy "path" that if any other player is in that area they have a chance of randomly encountering it (trade or combat). Also think about forts along the route with toll stations and/or prox-weapons
+- Personal mapper. Every map tile you discover will be written to the characters "map", which is unavailable unless you have a datapad and the program "MAPPER".
+- Dialogue system. Hyoerlinked words. Check flags and/or AIDES skill rolls for various things.
+- Faction reputation/standings. Plus or minus for certain actions. Unlocks/locks certain stuff (maybe locations become unavailable/available depending on standing, or certain functions inside a location turn on/off etc).
+- Armor slots? "Head", "Body", "Legs"?
+- Vehicles:
+  - BMX Bike - no inventory - no fuel
+  - Motorcycle - no inventory - consumes guzzoline
+  - Motorcycle w/ sidecar - slight inventory - consumes guzzoline
+  - Dune buggy - slight inventory - consumes guzzoline
+  - Car - big inventory - consumes guzzoline
+  - EV car - big inventory - consumes energy packs
+  - Gyrocopter - no inventory - consumes guzzoline
+  - Inflatable raft - no inventory - no fuel
+- How does having a land-vehicle affect traveling overland? Less stamina loss (terrain_types have `drag` which cause stamina loss). We're not really able to simulate "speed" as every "turn" is one movement anyways.
+- Achievements!
+  - Explore the entire map
+  - Kill x enemies
+  - Kill x enemies using grenades
+  - Kill X enemies bare handed
+  - Find X buried stashes
+  - Get your first vehicle
+  - Find the gyrocopter
+  - Break into the prison
+  - Enter the Nuclear Silo
+  - Reach level x
+  - Build a fort
+  - Defeat a fort
+  - Travel X tiles
+  - Teleport
+  - Find the crashed UFO
+  - Have a team of 5 players
+  - Have X cash
+  - Have X AGI/INT/DEX/END/STR
+  - Have ALL ROMS
+  - Find all the pieces of the Purifier
+  - Have highest standing with X/Y/Z
+  - Have negative standing with X
+  - Consumed X fuel
+  - Consumed X ammunition
+  - Consumed X medkits
+  - Defeat X players
+  - Have entered every single type of terrain_type
+  - Died 25 times
+  - Dealt X damage in a single combat phase
+  - Have entered every single (visible) location
+  - Has killed every single type of (normal) enemy
+  - Has run away X times
+  - Has produced X energy (in fortresses)
+  - Has taken X cash in tolls (fortresses)
+  - Owns X forts
+  - Take more than X damage in a combat without dying or running away/teleporting out
+  - Bookworm: Has read every single skillbook
+  - Own a familiar
+  - Plus various quests completed
+- ROMS:
+  - Diet - reduces food consumption by 10%
+  - Notes - Take notes
+  - Mapper - Map interface
+  - LRSCAN - Long range scan
+  - FortLink - Perform certain admin tasks at fortresses remotely
+  - CSTATS - Combat statistics
+  - Appraise - Get sell price for items
+  - Exploit - Allows for hacking certain things (electronic locks at certain locations, the alien pylon transport system, robots in combat etc)
+  - Route - Reduces fuel consumption by 10%.
+  - WACOMNET - Wasteland Comm net - allows you to see the inventory of networked stores in the wasteland remotely
+
 ## Thank you
 - Scott M Baker, my childhood hero. Thank you for Land of Devastation that gave me so many hours of adventure as a teen back in the 90s!
 - INT10h/VileR for the VGA9x16 font (https://int10h.org/oldschool-pc-fonts/)
