@@ -98,11 +98,11 @@ while($row2 = $res->fetch_assoc()) {
 </select>
 <select name="zone">
 <?php
-$sql = "SELECT * FROM zones ORDER BY name ASC";
+$sql = "SELECT * FROM zones ORDER BY full_name ASC";
 $res = $conn->query($sql);
 while($row2 = $res->fetch_assoc()) {
 ?>
-    <option value="<?=$row2["id"]?>"><?=$row["name"]?></option>
+    <option value="<?=$row2["id"]?>"><?=$row["full_name"]?></option>
 <?php
 }
 ?>
