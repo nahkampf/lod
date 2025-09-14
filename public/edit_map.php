@@ -96,6 +96,17 @@ while($row2 = $res->fetch_assoc()) {
 }
 ?>
 </select>
+<select name="zone">
+<?php
+$sql = "SELECT * FROM zones ORDER BY name ASC";
+$res = $conn->query($sql);
+while($row2 = $res->fetch_assoc()) {
+?>
+    <option value="<?=$row2["id"]?>"><?=$row["name"]?></option>
+<?php
+}
+?>
+</select>
 <br>
 <table>
 <?php
