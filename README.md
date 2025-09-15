@@ -78,7 +78,31 @@ Land of Desolation is a browser-based post-apocalyptic RPG in the style of Land 
   - Exploit - Allows for hacking certain things (electronic locks at certain locations, the alien pylon transport system, robots in combat etc)
   - Route - Reduces fuel consumption by 10%.
   - WACOMNET - Wasteland Comm net - allows you to see the inventory of networked stores in the wasteland remotely
-
+- Forts
+  - Defensive modules
+    - Walls
+    - Moats
+    - Shields
+    - Mine-launcher
+  - Offensive modules
+    - Prox module (1,2,3,4,5 tiles range)
+  - Utility modules
+    - Teleport node
+    - Tollstation (1x, 2x, 3x, 4x, 5x range)
+    - Stealth field
+    - Scavenger module (2,3,4,5,6 range)
+    - Warehouse
+    - Clone vault
+    - Battery banks (how much energy this fort can store)
+  - Production modules
+    - Hydroponics (food)
+    - Power production (reactors, generators, solar panels etc)
+    - Factory (produces various things you need blueprints for)
+  - Public modules
+    - Teleporter
+    - Store
+    - Clone vault
+    - Med-bot
 ## Thank you
 - Scott M Baker, my childhood hero. Thank you for Land of Devastation that gave me so many hours of adventure as a teen back in the 90s!
 - INT10h/VileR for the VGA9x16 font (https://int10h.org/oldschool-pc-fonts/)
