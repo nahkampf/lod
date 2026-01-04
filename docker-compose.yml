@@ -1,0 +1,24 @@
+networks:
+  lod:
+    name: lod
+services:
+  web:
+    image: php:8.4-apache
+    container_name: lod
+    volumes:
+      - ./:/var/www/lod
+      - ./.docker/apache/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    working_dir: /var/www/lod
+    ports:
+      - "8081:80"
+    build:
+      dockerfile: DOCKERFILE
+  lod-composer:
+    image: composer:latest
+    container_name: lod-composer
+    volumes:
+      - ./:/var/www/lod
+    working_dir: /var/www/lod
+    networks:
+      - lod
+    command: "git config --global --add safe.directory /var/www/lod & composer install &"
