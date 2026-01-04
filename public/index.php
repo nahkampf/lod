@@ -5,7 +5,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . "/../");
 $dotenv->load();
 session_start();
 $app = \LOD\App::getInstance();
-$loader = new \Twig\Loader\FilesystemLoader('./views');
+$loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/../views');
 $twig = new \Twig\Environment($loader, []);
 
 // Routing
