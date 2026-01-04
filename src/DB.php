@@ -39,6 +39,9 @@ class DB
         return $this->connection->query($query);
     }
 
+    /**
+     * @return array<mixed>|false|null
+     */
     public function fetchAll(mysqli_result $result): array|false|null
     {
         return $result->fetch_assoc();
@@ -51,6 +54,6 @@ class DB
 
     public function lastId(): int
     {
-        return $this->connection->insert_id;
+        return (int)$this->connection->insert_id;
     }
 }

@@ -11,7 +11,10 @@ final class App
     public readonly string $titleShort;
     public readonly string $version;
 
-    private static $instances = [];
+    /**
+     * @var array<mixed> $instances
+     */
+    private static array $instances = [];
 
     protected function __construct()
     {
